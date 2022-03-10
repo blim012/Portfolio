@@ -34,7 +34,6 @@ const ParticleSphere = (props) => {
       }
     });
 
-    console.log(document.querySelector('#projects').lastChild)
     ScrollTrigger.create({
       trigger: document.querySelector('#projects').lastChild,
       start: 'top top',
@@ -50,6 +49,25 @@ const ParticleSphere = (props) => {
           ease: 'power2.out',
           duration: 1,
         })
+      }
+    });
+
+    ScrollTrigger.create({
+      trigger: '#skills',
+      start: 'bottom center',
+      endTrigger: '#contacts',
+      end: 'top top',
+      onUpdate: (self) => {
+        // console.log('3rd animation: ' + self.progress.toFixed(3))
+        gsap.to(pSphereGroupRef.current.rotation, {
+          duration: 1,
+          y: '+=0.5',
+          ease: 'power2.out'
+        })
+        gsap.to(skillSphereRef.current.material, {
+          opacity: 1 - self.progress
+        })
+      
       }
     })
   });
