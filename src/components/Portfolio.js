@@ -8,6 +8,15 @@ const Portfolio = (props) => {
       </section>
       <section id="projects">
         <h1>Projects</h1>
+        <article className="project">
+          <h2>Project 1</h2>
+        </article>
+        <article className="project">
+          <h2>Project 2</h2>
+        </article>
+        <article className="project">
+          <h2>Project 3</h2>
+        </article>
       </section>
       <section id="skills">
         <h1>Skills</h1>

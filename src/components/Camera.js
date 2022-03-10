@@ -20,6 +20,19 @@ const Camera = (props) => {
         })
       }
     });
+
+    ScrollTrigger.create({
+      trigger: document.querySelector('#projects').lastChild,
+      start: 'top top',
+      endTrigger: '#skills',
+      end: 'top top',
+      onUpdate: (self) => {
+        gsap.to(cameraRef.current.position, {
+          x: -12 * Math.pow(self.progress, 0.6),
+          z: 17 - (17 * Math.pow(self.progress, 1.5))
+        })
+      }
+    })
   }, []);
 
   return (
