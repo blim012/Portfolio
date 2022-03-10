@@ -1,0 +1,18 @@
+#welcome {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  height: 150vh;
+}
+
+#projects {
+  height: 400vh;
+}
+
+#skills {
+  height: 150vh;
+}
+
+#contacts {
+  height: 100vh;
+}
