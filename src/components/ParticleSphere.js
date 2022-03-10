@@ -1,6 +1,8 @@
 import React from "react";
 
 const ParticleSphere = (props) => {
+  const particleTexture = props.particleTexture;
+
   return (
     <points>
       <sphereGeometry args={[5, 64, 32]} />
@@ -8,12 +10,12 @@ const ParticleSphere = (props) => {
         color={0x48cae4}
         size={0.2}
         sizeAttenuation={true}
-        // alphaMap={particleTexture}
+        alphaMap={particleTexture}
         transparent={true}
         depthWrite={false}
       />
     </points>
-  )
+  );
 }
 
-export default ParticleSphere
+export default ParticleSphere;

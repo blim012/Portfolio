@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import { useRef } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import Camera from './Camera';
-import ParticleSphere from './ParticleSphere';
+import Scene from './Scene';
 
 const App = () => {
   const mesh = useRef()
@@ -15,12 +15,12 @@ const App = () => {
           enableZoom={false} 
           enableRotate={false}/>
         <Camera 
-          position={[0, -20, 0]} 
+          position={[0, -15, 0]} 
           near={0.01}
           far={100}
           target={mesh}
         />
-        <ParticleSphere />
+        <Scene />
       </Canvas>
     </div>
   )
