@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.js';
+import R3F from './components/R3F.js';
 import './stylesheets/reset.css';
 import './stylesheets/style.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <R3F />
   </React.StrictMode>,
   document.getElementById('root')
 );
