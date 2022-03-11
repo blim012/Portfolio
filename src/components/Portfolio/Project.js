@@ -6,7 +6,11 @@ import ImageViewer from 'react-simple-image-viewer';
 const Project = (props) => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const {
-    imageSrc
+    imageSrc,
+    projectName,
+    description,
+    demoLink,
+    githubLink
   } = props;
   const image = [imageSrc];
   const projectImageRef = useRef();
@@ -54,7 +58,7 @@ const Project = (props) => {
         <img 
           className="project-image" 
           src={imageSrc}
-          alt="crello"
+          alt={`Screenshot of the ${projectName} demo`}
           ref={projectImageRef}
           onLoad={setImageParallax}
           onClick={openImageViewer}
@@ -64,15 +68,11 @@ const Project = (props) => {
         className="project-info"
         ref={projectInfoRef}
       >
-        <h1 className="project-header">Crello</h1>
-        <p className="project-description">
-          A full-stack recreation of Trello, a Kanban-based workflow management tool.
-          Provides real-time board updates between users, and has fully draggable
-          tickets and columns.
-        </p>
+        <h1 className="project-header">{projectName}</h1>
+        <p className="project-description">{description}</p>
         <div className="project-links">
-          <a href="#">Demo</a>
-          <a href="#">Github</a>
+          <a href={demoLink} target="_blank">Demo</a>
+          <a href={githubLink} target="_blank">Github</a>
         </div>
       </div>
 

@@ -61,6 +61,7 @@
   margin-bottom: 0.5rem;
   font-size: var(--step--1);
   color: var(--secondary-txt);
+  width: min-content;
 }
 
 @media only screen and (min-width: 768px) {
