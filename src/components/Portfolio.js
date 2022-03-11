@@ -28,7 +28,6 @@ const Portfolio = (props) => {
       end: 'top top',
       onEnter: () => changeBannerText("Here are some things I'm good at"),
       onEnterBack: () => {
-        console.log('here')
         changeBannerText("Here are some things I'm good at")
       }
     });

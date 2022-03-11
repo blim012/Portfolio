@@ -6,6 +6,16 @@
 
   /* Text Colors */
   --primary-txt: #f8f9fa;
+
+  /* Responsive Font Sizes from Utopia.fyi */
+  --step--2: clamp(0.96rem, calc(0.90rem + 0.05vw), 0.91rem);
+  --step--1: clamp(1.20rem, calc(1.07rem + 0.11vw), 1.09rem);
+  --step-0: clamp(1.31rem, calc(1.28rem + 0.19vw), 1.50rem);
+  --step-1: clamp(1.58rem, calc(1.52rem + 0.30vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.80rem + 0.45vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.14rem + 0.66vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.53rem + 0.94vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(3.00rem + 1.31vw), 4.58rem);
 }
 
 html {
