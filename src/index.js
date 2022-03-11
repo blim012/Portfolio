@@ -9,6 +9,7 @@ import TextPlugin from 'gsap/TextPlugin';
 import './stylesheets/reset.css';
 import './stylesheets/style.css';
 import './stylesheets/portfolio.css';
+import './stylesheets/projects.css';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);

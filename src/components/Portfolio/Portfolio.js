@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Projects from "./Projects";
 
 const Portfolio = (props) => {
   useEffect(() => {
@@ -53,18 +54,7 @@ const Portfolio = (props) => {
         {'> '}<span className="banner-text">Hello, I'm Brandon</span>
       </header>
       <section id="welcome"></section>
-      <section id="projects">
-        <h1>Projects</h1>
-        <article className="project">
-          <h2>Project 1</h2>
-        </article>
-        <article className="project">
-          <h2>Project 2</h2>
-        </article>
-        <article className="project">
-          <h2>Project 3</h2>
-        </article>
-      </section>
+      <Projects />
       <section id="skills">
         <h1>Skills</h1>
       </section>

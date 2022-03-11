@@ -11,14 +11,10 @@
   width: fit-content;
   text-align: center;
   font-size: var(--step-0);
-  background-color: rgba(2, 62, 138, 0.7);
+  background-color: rgba(var(--secondary-bg), 0.7);
   border-radius: 1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  z-index: 9999;
-}
-
-.project {
-  height: 100vh;
+  z-index: 1;
 }
 
 #skills {
