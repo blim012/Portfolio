@@ -3,9 +3,15 @@
 :root {
   /* Background Colors */
   --primary-bg: #242423;
+  --secondary-bg: 38, 103, 255;
+  --tertiary-bg: 0, 0, 0;
+
+  /* Border Colors */
+  --primary-border: #3b28cc;
 
   /* Text Colors */
   --primary-txt: #f8f9fa;
+  --secondary-txt: #3f8efc;
 
   /* Responsive Font Sizes from Utopia.fyi */
   --step--2: clamp(0.96rem, calc(0.90rem + 0.05vw), 0.91rem);
