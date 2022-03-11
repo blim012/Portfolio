@@ -1,0 +1,29 @@
+#welcome {
+  height: 150vh;
+}
+
+.section-banner {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgba(2, 62, 138, 0.7);
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 9999;
+}
+
+.project {
+  height: 100vh;
+}
+
+#skills {
+  height: 150vh;
+}
+
+#contacts {
+  height: 110vh;
+}
