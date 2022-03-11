@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap');
+
 :root {
   /* Background Colors */
   --primary-bg: #242423;
@@ -8,7 +10,12 @@
 
 html {
   background-color: var(--primary-bg);
-  color: var(--primary-txt)
+  color: var(--primary-txt);
+  font-family: 'Dosis', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #canvas-container {
