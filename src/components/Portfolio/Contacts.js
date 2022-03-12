@@ -22,7 +22,7 @@ const Contacts = (props) => {
 
     function fadeIn(element, progress) {    
       gsap.to(element, {
-        display: 'block',
+        zIndex: 0,
         scale: progress,
         duration: 0.3
       });
