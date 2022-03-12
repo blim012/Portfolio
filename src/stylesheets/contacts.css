@@ -4,6 +4,7 @@
 }
 
 #contacts-list {
+  z-index: -1;
   position: fixed;
   width: max-content;
   top: 50%;
