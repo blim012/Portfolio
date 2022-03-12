@@ -53,29 +53,30 @@ const Project = (props) => {
   };
 
   return (
-    <article className="project">
-      <div className="project-image-frame">
-        <img 
-          className="project-image" 
-          src={imageSrc}
-          alt={`Screenshot of the ${projectName} demo`}
-          ref={projectImageRef}
-          // onLoad={setImageParallax}
-          onClick={openImageViewer}
-        />
-      </div>
-      <div 
-        className="project-info"
-        ref={projectInfoRef}
-      >
-        <h1 className="project-header">{projectName}</h1>
-        <p className="project-description">{description}</p>
-        <div className="project-links">
-          <a href={demoLink} target="_blank">Demo</a>
-          <a href={githubLink} target="_blank">Github</a>
+    <>
+      <article className="project">
+        <div className="project-image-frame">
+          <img 
+            className="project-image" 
+            src={imageSrc}
+            alt={`Screenshot of the ${projectName} demo`}
+            ref={projectImageRef}
+            // onLoad={setImageParallax}
+            onClick={openImageViewer}
+          />
         </div>
-      </div>
-
+        <div 
+          className="project-info"
+          ref={projectInfoRef}
+        >
+          <h1 className="project-header">{projectName}</h1>
+          <p className="project-description">{description}</p>
+          <div className="project-links">
+            <a href={demoLink} target="_blank">Demo</a>
+            <a href={githubLink} target="_blank">Github</a>
+          </div>
+        </div>
+      </article>
       {isViewerOpen &&
         <ImageViewer 
           src={image}
@@ -83,9 +84,10 @@ const Project = (props) => {
           disableScroll={true}
           onClose={closeImageViewer}
           closeOnClickOutside={true}
+          backgroundStyle={{backgroundColor: "rgba(0,0,0,0.9)"}}
         />
       }
-    </article>
+    </>
   );
 };
 

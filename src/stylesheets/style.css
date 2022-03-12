@@ -66,3 +66,7 @@ html {
   border-radius: 20px;
   border: 6px solid grey;
 }
+
+#ReactSimpleImageViewer {
+  z-index: 9999;
+}
