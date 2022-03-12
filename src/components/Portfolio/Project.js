@@ -27,22 +27,22 @@ const Project = (props) => {
     });
   }, []);
 
-  const setImageParallax = () => {
-    const frameHeight = projectImageRef.current.parentElement.clientHeight;
-    const imageHeight = projectImageRef.current.offsetHeight;
-    const percentDiff = (1 - (frameHeight / imageHeight)) * 100;
+  // const setImageParallax = () => {
+  //   const frameHeight = projectImageRef.current.parentElement.clientHeight;
+  //   const imageHeight = projectImageRef.current.offsetHeight;
+  //   const percentDiff = (1 - (frameHeight / imageHeight)) * 100;
 
-    gsap.to(projectImageRef.current, {
-      yPercent: Math.floor(percentDiff),
-      ease: "none",
-      scrollTrigger: {
-        trigger: projectImageRef.current,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true
-      }, 
-    });
-  };
+  //   gsap.to(projectImageRef.current, {
+  //     yPercent: Math.floor(percentDiff),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: projectImageRef.current,
+  //       start: "top bottom",
+  //       end: "bottom top",
+  //       scrub: true
+  //     }, 
+  //   });
+  // };
 
   const openImageViewer = useCallback(() => {
     setIsViewerOpen(true);
@@ -60,7 +60,7 @@ const Project = (props) => {
           src={imageSrc}
           alt={`Screenshot of the ${projectName} demo`}
           ref={projectImageRef}
-          onLoad={setImageParallax}
+          // onLoad={setImageParallax}
           onClick={openImageViewer}
         />
       </div>
