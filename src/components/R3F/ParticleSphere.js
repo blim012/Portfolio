@@ -22,7 +22,6 @@ const ParticleSphere = (props) => {
       endTrigger: '#projects',
       end: 'top top',
       onUpdate: (self) => {
-        // console.log('1st animation: ' + self.progress.toFixed(3))
         gsap.to(pSphereGroupRef.current.rotation, {
           y: '+=0.5',
           ease: 'power2.out',
@@ -40,7 +39,6 @@ const ParticleSphere = (props) => {
       endTrigger: '#skills',
       end: 'top top',
       onUpdate: (self) => {
-        // console.log('2nd animation: ' + self.progress.toFixed(3))
         gsap.to(skillSphereRef.current.material, {
           opacity: self.progress
         })
@@ -56,18 +54,16 @@ const ParticleSphere = (props) => {
       trigger: '#skills',
       start: 'bottom center',
       endTrigger: '#contacts',
-      end: 'top top',
+      end: 'bottom bottom',
       onUpdate: (self) => {
-        // console.log('3rd animation: ' + self.progress.toFixed(3))
         gsap.to(pSphereGroupRef.current.rotation, {
           duration: 1,
-          y: '+=0.5',
+          y: '+=0.2',
           ease: 'power2.out'
         })
         gsap.to(skillSphereRef.current.material, {
-          opacity: 1 - self.progress
+          opacity: 1 - self.progress * 2
         })
-      
       }
     })
   });

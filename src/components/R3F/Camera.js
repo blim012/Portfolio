@@ -32,7 +32,18 @@ const Camera = (props) => {
           z: 17 - (17 * Math.pow(self.progress, 1.5))
         })
       }
-    })
+    });
+
+    ScrollTrigger.create({
+      trigger: '#contacts',
+      start: 'top center',
+      end: 'bottom bottom',
+      onUpdate: (self) => {
+        gsap.to(cameraRef.current.position, {
+          x: -12 + (12 * (Math.pow(Math.sin(5 * self.progress / Math.PI), 2)))
+        })
+      }
+    });
   }, []);
 
   return (
