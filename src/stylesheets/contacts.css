@@ -1,0 +1,53 @@
+#contacts {
+  position: relative;
+  height: 200vh;
+}
+
+#contacts-list {
+  position: fixed;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact {
+  padding: 0.5rem;
+  background-color: rgb(var(--secondary-bg));
+  border-radius: 1rem;
+  transform: scale(0);
+}
+
+.contact:nth-child(n + 2) {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-link img {
+  max-height: 3rem;
+  filter: invert(1);
+  margin-left: 0.5rem;
+}
+
+.contact-link p {
+  width: 100%;
+  font-size: var(--step--1);
+  color: var(--primary-txt);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact-link p {
+    font-size: var(--step-0);
+  }
+}

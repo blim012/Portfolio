@@ -10,6 +10,7 @@ import './stylesheets/reset.css';
 import './stylesheets/style.css';
 import './stylesheets/portfolio.css';
 import './stylesheets/projects.css';
+import './stylesheets/contacts.css';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
