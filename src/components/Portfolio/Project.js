@@ -72,8 +72,20 @@ const Project = (props) => {
           <h1 className="project-header">{projectName}</h1>
           <p className="project-description">{description}</p>
           <div className="project-links">
-            <a href={demoLink} target="_blank">Demo</a>
-            <a href={githubLink} target="_blank">Github</a>
+            <a 
+              href={demoLink} 
+              target="_blank"
+              rel="noreferrer"
+            >
+              Demo
+            </a>
+            <a 
+              href={githubLink} 
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
           </div>
         </div>
       </article>

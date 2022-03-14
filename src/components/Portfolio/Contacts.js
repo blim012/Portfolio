@@ -45,6 +45,7 @@ const Contacts = (props) => {
             className="contact-link"
             href="https://drive.google.com/file/d/1AkdsHGDXdBMQNPNGuVRBPRdfdBiiuANB/view" 
             target="_blank"
+            rel="noreferrer"
           >
             <p>Résumé</p>
             <img src={ResumeIcon} alt="Resume Icon" />
@@ -55,6 +56,7 @@ const Contacts = (props) => {
             className="contact-link"
             href="https://github.com/blim012" 
             target="_blank"
+            rel="noreferrer"
           >
             <p>Github</p>
             <img src={GithubIcon} alt="Github Icon" />
