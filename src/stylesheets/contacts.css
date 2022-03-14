@@ -12,7 +12,6 @@
 }
 
 .contact {
-  padding: 0.5rem;
   background-color: rgb(var(--secondary-bg));
   border-radius: 1rem;
   transform: scale(0);
@@ -27,6 +26,13 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(var(--secondary-bg));
+  border-radius: 1rem;
+}
+
+.contact-link:hover {
+  border: 0.2rem solid white;
 }
 
 .contact-link img {
@@ -43,10 +49,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .contact {
-    padding: 1rem;
-  }
-
   .contact-link p {
     font-size: var(--step-0);
   }
