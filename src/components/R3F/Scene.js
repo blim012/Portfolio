@@ -2,9 +2,10 @@ import React from "react";
 import { useTexture } from "@react-three/drei"
 import ParticleSphere from "./ParticleSphere";
 import AmbientParticles from "./AmbientParticles";
+import circleTexture from "../../static/circle.png";
 
 const Scene = (props) => {
-  const particleTexture = useTexture('circle.png');
+  const particleTexture = useTexture(circleTexture);
 
   return (
     <>
