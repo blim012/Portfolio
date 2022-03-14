@@ -46,7 +46,7 @@ const Project = (props) => {
 
   const openImageViewer = useCallback(() => {
     setIsViewerOpen(true);
-  });
+  }, []);
 
   const closeImageViewer = () => {
     setIsViewerOpen(false);
