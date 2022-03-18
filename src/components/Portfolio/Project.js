@@ -18,7 +18,7 @@ const Project = (props) => {
 
   useEffect(() => {
     gsap.to(projectInfoRef.current, {
-      yPercent: -60,
+      yPercent: -100,
       ease: "none",
       scrollTrigger: {
         trigger: projectInfoRef.current,
