@@ -11,7 +11,7 @@ const Portfolio = (props) => {
       start: 'top top',
       endTrigger: '#projects',
       end: 'top top',
-      onEnterBack: () => changeBannerText("Hello, I'm Brandon")
+      onEnterBack: () => changeBannerText("Hello, I'm Brandon Lim")
     });
     
     ScrollTrigger.create({
@@ -19,8 +19,8 @@ const Portfolio = (props) => {
       start: 'top top',
       endTrigger: '#skills',
       end: 'top top',
-      onEnter: () => changeBannerText('Some projects I made'),
-      onEnterBack: () => changeBannerText('Some projects I made')
+      onEnter: () => changeBannerText('Here are some projects I made'),
+      onEnterBack: () => changeBannerText('Here are some projects I made')
     });
     
     ScrollTrigger.create({
@@ -28,9 +28,9 @@ const Portfolio = (props) => {
       start: 'top top',
       endTrigger: '#contacts',
       end: 'top top',
-      onEnter: () => changeBannerText("Here are some things I'm good at"),
+      onEnter: () => changeBannerText("Here are some of my skills"),
       onEnterBack: () => {
-        changeBannerText("Here are some things I'm good at")
+        changeBannerText("Here are some of my skills")
       }
     });
     
@@ -52,7 +52,7 @@ const Portfolio = (props) => {
   return (
     <main id="portfolio">
       <header className="section-banner">
-        {'> '}<span className="banner-text">Hello, I'm Brandon</span>
+        {'> '}<span className="banner-text">Hello, I'm Brandon Lim</span>
       </header>
       <section id="welcome"></section>
       <Projects />
