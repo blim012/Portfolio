@@ -18,6 +18,10 @@ const R3F = () => {
             near={0.01}
             far={100}
           />
+          <ambientLight 
+            color={0xffffff}
+            intensity={1}
+          />
           <Scene />
         </React.Suspense>
       </Canvas>
