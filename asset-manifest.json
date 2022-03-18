@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2354312c.css",
-    "main.js": "/Portfolio/static/js/main.47618d63.js",
-    "static/media/crello.png": "/Portfolio/static/media/crello.379d85482140c0c0d139.png",
-    "static/media/marketmog.png": "/Portfolio/static/media/marketmog.b35a6c13ea8fee593a16.png",
-    "static/media/battleship.png": "/Portfolio/static/media/battleship.c2dc3ea7ddf2032a7f53.png",
-    "static/media/ruby-chess.png": "/Portfolio/static/media/ruby-chess.2bd364ed25606bd874b3.png",
-    "static/media/skillSphere1.png": "/Portfolio/static/media/skillSphere1.45af039346ec205e60df.png",
-    "static/media/skillSphere2.png": "/Portfolio/static/media/skillSphere2.6555e02af61bf6262063.png",
-    "index.html": "/Portfolio/index.html",
-    "main.2354312c.css.map": "/Portfolio/static/css/main.2354312c.css.map",
-    "main.47618d63.js.map": "/Portfolio/static/js/main.47618d63.js.map"
+    "main.css": "/static/css/main.2354312c.css",
+    "main.js": "/static/js/main.417448bd.js",
+    "static/media/crello.png": "/static/media/crello.379d85482140c0c0d139.png",
+    "static/media/marketmog.png": "/static/media/marketmog.b35a6c13ea8fee593a16.png",
+    "static/media/battleship.png": "/static/media/battleship.c2dc3ea7ddf2032a7f53.png",
+    "static/media/ruby-chess.png": "/static/media/ruby-chess.2bd364ed25606bd874b3.png",
+    "static/media/skillSphere1.png": "/static/media/skillSphere1.45af039346ec205e60df.png",
+    "static/media/skillSphere2.png": "/static/media/skillSphere2.6555e02af61bf6262063.png",
+    "index.html": "/index.html",
+    "main.2354312c.css.map": "/static/css/main.2354312c.css.map",
+    "main.417448bd.js.map": "/static/js/main.417448bd.js.map"
   },
   "entrypoints": [
     "static/css/main.2354312c.css",
-    "static/js/main.47618d63.js"
+    "static/js/main.417448bd.js"
   ]
 }
